@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="06/04/2025 15:11:04" ReportInfo.Modified="06/04/2025 15:41:51" ReportInfo.CreatorVersion="2016.1.0.0">
+  <Dictionary/>
+  <ReportPage Name="Page1" PaperWidth="80.01" PaperHeight="50.0126" LeftMargin="0" TopMargin="0" RightMargin="0" BottomMargin="0">
+    <DataBand Name="Data1" Width="302.44" Height="190.7">
+      <TableObject Name="Table1" Width="302.44" Height="190.7" Dock="Fill" Anchor="Top, Bottom, Left, Right">
+        <TableColumn Name="Column1" Width="100.81"/>
+        <TableColumn Name="Column2" Width="100.81"/>
+        <TableColumn Name="Column3" Width="100.81"/>
+        <TableRow Name="Row1" Height="33.99">
+          <TableCell Name="Cell1" Text="固定资产标识卡" HorzAlign="Center" VertAlign="Center" Font="宋体, 15.75pt" ColSpan="3"/>
+          <TableCell Name="Cell2" Font="宋体, 9pt"/>
+          <TableCell Name="Cell3" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row2" Height="33.99">
+          <TableCell Name="Cell6" Text="资产编码" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell7" Text="[F_AssetNumber]" Font="宋体, 9pt"/>
+          <TableCell Name="Cell8" Font="宋体, 9pt" RowSpan="5">
+            <BarcodeObject Name="code" Left="9.45" Width="132" Height="132" Anchor="Top, Bottom, Left, Right" Expression="[F_AssetNumber]" Text="［F_AssetNumber］" ShowText="false" AllowExpressions="true" Barcode="QR Code" Barcode.ErrorCorrection="L" Barcode.Encoding="UTF8" Barcode.QuietZone="true"/>
+          </TableCell>
+        </TableRow>
+        <TableRow Name="Row3" Height="24.54">
+          <TableCell Name="Cell11" Text="资产名称" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell12" Text="[F_FullName]" Font="宋体, 9pt"/>
+          <TableCell Name="Cell13" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row4" Height="24.54">
+          <TableCell Name="Cell16" Text="资产型号" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell17" Text="[F_Specification]" Font="宋体, 9pt"/>
+          <TableCell Name="Cell18" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row5" Height="33.99">
+          <TableCell Name="Cell21" Text="资产位置" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell22" Text="[F_EnCode]" Font="宋体, 9pt"/>
+          <TableCell Name="Cell23" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row6" Height="20.75">
+          <TableCell Name="Cell24" Text="使用部门" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell25" Text="[F_Brand]" Font="宋体, 9pt"/>
+          <TableCell Name="Cell26" Font="宋体, 9pt"/>
+        </TableRow>
+      </TableObject>
+    </DataBand>
+  </ReportPage>
+</Report>
